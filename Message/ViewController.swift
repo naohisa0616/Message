@@ -8,11 +8,20 @@
 
 import UIKit
 
+class Message {
+//    クラスメソッド
+    class func hello() -> String {
+        return "こんにちは"
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Messageクラスのhelloクラスメソッドを実行する。
+        let msg = Message.hello()
+        print(msg)
     }
 
 
